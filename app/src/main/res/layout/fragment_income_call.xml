@@ -1,0 +1,61 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hti.graduationproject.wificalling.fragments.CallProcessFragment">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Incomming Call"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="64dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/income_phone_num"
+            android:textSize="36sp"
+            android:gravity="center"
+            tools:text="Phone Number"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="128dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="32dp">
+        <ImageView
+            android:id="@+id/answerCallFrag"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/call_icon"
+            android:layout_weight="1"
+            android:background="@android:color/transparent" />
+        <ImageView
+            android:id="@+id/rejectCallFrag"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/end_call"
+            android:layout_weight="1"
+            android:background="@android:color/transparent" />
+
+    </LinearLayout>
+
+</RelativeLayout>

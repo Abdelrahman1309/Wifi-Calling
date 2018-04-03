@@ -1,0 +1,82 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hti.graduationproject.wificalling.fragments.CallProcessFragment">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/callprocess"
+        android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dialling"
+            android:id="@+id/timer"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="64dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/display_name"
+            android:textSize="36dp"
+            android:gravity="center"
+            tools:text="Unknown Number"
+            android:textColor="@android:color/white" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/display_phone_num"
+            android:textSize="30dp"
+            android:gravity="center"
+            tools:text="Phone Number"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="128dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/endCallFragBtn">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:id="@+id/speaker"
+            android:layout_weight="1"
+            android:src="@drawable/speaker"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:id="@+id/keypad"
+            android:src="@drawable/dialpad"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:id="@+id/mute"
+            android:layout_weight="1"
+            android:src="@drawable/mic_off"/>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/endCallFragBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/end_call"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="32dp"
+        android:background="@android:color/transparent" />
+</RelativeLayout>
