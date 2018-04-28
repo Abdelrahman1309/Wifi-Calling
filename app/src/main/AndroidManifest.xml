@@ -35,7 +35,7 @@
     <application android:name=".App"
         android:allowBackup="true"
         android:icon="@drawable/phone"
-        android:label = "WiFi Calling"
+        android:label = "Voca Me"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".activities.SplashActivity">
